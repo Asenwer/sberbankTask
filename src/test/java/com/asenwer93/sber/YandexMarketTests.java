@@ -34,7 +34,7 @@ public class YandexMarketTests {
                 .goToTheSubcategory(YandexMarketMainPage.Subcategory.LAPTOP);
 
         laptopPage.goToAllFilters()
-                .setPrice(0, 30000)
+                .setPrice(0, 30_000)
                 .selectCompanies("HP", "Lenovo")
                 .apply();
         softAssert.assertEquals(laptopPage.countElements(), 10);
